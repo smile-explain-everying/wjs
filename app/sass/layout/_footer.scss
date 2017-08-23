@@ -1,0 +1,161 @@
+/*zh 2016 0310*/
+@charset "utf-8";
+@import  "helpers/_mixins.scss";  
+.footer{
+	background-color:#4e4e4e;
+	padding: 20px 0 15px;
+	.footer_link{
+		padding-bottom:10px;
+		border-bottom:1px solid #9c9b9b;
+		ul{
+			float:left;
+			li{
+				font-size:12px;
+				color:$oColor;
+				&:first-child{
+					font-size:14px;
+					color:#fff;
+					margin-bottom:18px;
+				}
+				a{
+					color:$oColor;
+				}
+			}
+		}
+		.footer_col_1,.footer_col_2{
+			width:160px;
+		}
+		.footer_col_3{
+			width:155px;
+		}
+		.footer_col_4{
+			width:250px;
+		}
+		.footer_col_5{
+			float:right;
+			li{
+				float:left;
+				p{
+					font-size:12px;
+					color:$oColor;
+					text-align:center;
+				}
+				img{
+					width:100px;
+					height:100px;
+				}
+				&:last-child{
+					margin-left:22px;
+				}
+			}
+		}
+		.links{
+			color:#999999;
+			margin:20px 0 38px;
+			a{
+				margin-left:6px;
+				color:#999999;
+			}
+		}
+	}
+	.footer_bar{
+		margin-top:20px;
+		p{
+			font-size:12px;
+			color:$oColor;
+			text-align:center
+		}
+	}
+}
+.nav_sidebar_right{
+	position: fixed;
+	right:50%;
+	bottom:2%;
+	margin-right:-580px;
+	li{
+		margin-bottom:5px;
+		&:first-child{
+            .nologin, .login{
+            	position: absolute;
+            	display:none;
+            	top:-58px;
+            	right:-35px;
+            	z-index:80;
+            	border:1px solid $seColor;
+            	background-color:#fff;
+            	@include border-radius(8px);
+            	.arrow_pic{
+            		position: absolute;
+            		top:25px;
+            		right:50px;
+            		width:15px;
+            		height:15px;
+            		background-position: -56px -72px;
+            	}
+            	.check_tit{
+            		text-align:center;
+            		width:120px;
+            		height:26px;
+            		line-height:26px;
+            		font-size:12px;
+            	}
+            }
+		}
+		a{
+			display:inline-block;
+			width:45px;
+			height:45px;
+			background-image: url(../images/sprite.png);
+			vertical-align: middle;
+		}
+		.nockeckin{
+			background-position: 0 -118px;
+			&:hover{
+				.nologin{display:block;}
+			}
+		}
+		.ckeckinon{
+			background-position: -45px -118px;
+			&:hover{
+				.login{display:block;}
+			}
+		}
+		.xiaoman{
+			background-position: 0 -168px;
+			position: relative;
+			img{
+				width:100px;
+				height:100px;
+				position: absolute;
+				right:50px;
+				top:-28px;
+				display:none;
+			}
+			&:hover{
+				background-position: -45px -168px;
+				img{
+					display:block;
+				}
+			}
+		}
+		.focusus{
+			background-position: 0 -218px;
+			&:hover{
+				background-position: -45px -218px;
+			}
+		}
+		.contact{
+			background-position: 0 -268px;
+			&:hover{
+				background-position: -45px -268px;
+			}
+		}
+		.backtop{
+			background-position: 0 -318px;
+			&:hover{
+				background-position: -45px -318px;
+			}
+		}
+
+	}
+}

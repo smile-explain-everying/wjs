@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*product_list*/
+/*zh 2017 0317 v1.0*/
+/*分页共通样式*/
+.somePage {
+  width: 1000px;
+  margin: 10px auto 0;
+  text-align: right; }
+  .somePage a {
+    padding: 0 9px;
+    height: 26px;
+    line-height: 26px;
+    margin: 3px;
+    display: inline-block;
+    border: 1px solid #dbdada;
+    color: #666;
+    font-weight: 700;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+    .somePage a:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage #iconPagePrev, .somePage #iconPageNext {
+    padding: 0 9px;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+    border: 1px solid #dbdada;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -o-border-radius: 13px;
+    border-radius: 13px; }
+    .somePage #iconPagePrev:hover, .somePage #iconPageNext:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage a.current {
+    background: #ff9c00;
+    color: #fff;
+    border: 1px solid #ff9c00; }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+  .container .content {
+    flex: 1; }
+    .container .content .screening {
+      background-color: #fff; }
+      .container .content .screening dl, .container .content .screening .integral {
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        border-bottom: 1px solid #f9f9f9;
+        padding: 0 5px;
+        color: #000; }
+        .container .content .screening dl span, .container .content .screening .integral span {
+          color: #999999;
+          margin-right: 28px; }
+      .container .content .screening dt {
+        width: 80px;
+        text-align: left; }
+      .container .content .screening dd a {
+        display: inline-block;
+        color: #999999;
+        width: 128px; }
+      .container .content .screening .now {
+        color: #ff9c00; }
+      .container .content .screening .integral {
+        color: #999999; }
+        .container .content .screening .integral span {
+          color: #ff9c00; }
+        .container .content .screening .integral .allbtn, .container .content .screening .integral .maybtn {
+          width: 102px;
+          height: 28px;
+          line-height: 28px;
+          color: #fff;
+          background-color: #ff9c00;
+          -webkit-border-radius: 28px;
+          -moz-border-radius: 28px;
+          -o-border-radius: 28px;
+          border-radius: 28px;
+          margin-right: 18px; }
+    .container .content .requirement {
+      background-color: #fff;
+      height: 40px;
+      line-height: 40px; }
+      .container .content .requirement a {
+        color: #999999;
+        display: inline-block;
+        width: 76px;
+        text-align: center; }
+      .container .content .requirement .now {
+        height: 38px;
+        color: #ff9c00;
+        border-bottom: 2px solid #ff9c00; }
+    .container .content .list {
+      width: 1000px;
+      padding: 0; }
+      .container .content .list ul {
+        margin-left: -14px; }
+        .container .content .list ul li {
+          float: left;
+          width: 238px;
+          height: 280px;
+          margin: 10px 0 0 15px;
+          background-color: #fff;
+          -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+          .container .content .list ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative; }
+            .container .content .list ul li a .newproduct {
+              position: absolute;
+              width: 46px;
+              height: 46px;
+              background-position: 0 -72px; }
+            .container .content .list ul li a div .tit {
+              font-size: 16px;
+              color: #000;
+              text-align: center;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; }
+            .container .content .list ul li a div .requiredpoints {
+              margin-top: 50px;
+              padding: 0 10px; }
+              .container .content .list ul li a div .requiredpoints span {
+                color: #ff9c00; }
+              .container .content .list ul li a div .requiredpoints s {
+                color: #999999; }
+          .container .content .list ul li:hover {
+            width: 236px;
+            height: 278px;
+            border: 1px solid #ff9c00; }

@@ -1,0 +1,18 @@
+.paySuccess .layout {
+  min-height: 570px;
+  background-color: #fff;
+  padding-top: 30px; }
+  .paySuccess .layout div {
+    text-align: center;
+    font-family: "microsoft yahei";
+    position: relative;
+    top: 209px; }
+    .paySuccess .layout div p {
+      font-size: 28px;
+      color: #696969;
+      padding-bottom: 50px; }
+    .paySuccess .layout div a {
+      color: #999;
+      font-size: 16px; }
+    .paySuccess .layout div span {
+      color: #299dff; }

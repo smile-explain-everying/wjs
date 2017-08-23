@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*首页index*/
+/*分页共通样式*/
+.somePage {
+  width: 1000px;
+  margin: 10px auto 0;
+  text-align: right; }
+  .somePage a {
+    padding: 0 9px;
+    height: 26px;
+    line-height: 26px;
+    margin: 3px;
+    display: inline-block;
+    border: 1px solid #dbdada;
+    color: #666;
+    font-weight: 700;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+    .somePage a:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage #iconPagePrev, .somePage #iconPageNext {
+    padding: 0 9px;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+    border: 1px solid #dbdada;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -o-border-radius: 13px;
+    border-radius: 13px; }
+    .somePage #iconPagePrev:hover, .somePage #iconPageNext:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage a.current {
+    background: #ff9c00;
+    color: #fff;
+    border: 1px solid #ff9c00; }
+
+.content {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto; }
+  .content .address_title {
+    width: 980px;
+    height: 18px;
+    line-height: 19px;
+    color: #333;
+    text-align: left;
+    font-size: 18px;
+    margin: 40px 0 20px 20px; }
+  .content .address_content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 40px;
+    overflow: hidden; }
+    .content .address_content ul li {
+      width: 100%;
+      height: 28px;
+      line-height: 29px;
+      padding-top: 10px; }
+      .content .address_content ul li select {
+        width: 100px;
+        height: 28px;
+        border: 1px solid #ccc; }
+        .content .address_content ul li select:hover {
+          border: 1px solid #ff9c00; }
+      .content .address_content ul li textarea {
+        width: 250px;
+        height: 80px;
+        resize: none;
+        padding: 5px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        /* Firefox */
+        -webkit-box-sizing: border-box;
+        /* Safari */
+        border: 1px solid #ccc; }
+        .content .address_content ul li textarea:hover {
+          border: 1px solid #ff9c00; }
+      .content .address_content ul li input {
+        width: 250px;
+        height: 28px;
+        float: left;
+        padding-left: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        /* Firefox */
+        -webkit-box-sizing: border-box;
+        /* Safari */ }
+        .content .address_content ul li input:hover {
+          border: 1px solid #ff9c00; }
+      .content .address_content ul li span {
+        width: 75px;
+        height: 28px;
+        font-size: 12px;
+        float: left;
+        text-align: right;
+        padding-right: 5px; }
+        .content .address_content ul li span .necessary_ico {
+          color: #ff9122; }
+    .content .address_content p {
+      width: 100%;
+      height: 20px;
+      padding: 10px 0 10px 75px;
+      font-size: 12px; }
+    .content .address_content .save_info {
+      width: 116px;
+      height: 30px;
+      font-size: 18px;
+      background: #ff9c00;
+      color: #fff;
+      margin: 10px 0 40px 75px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -o-border-radius: 30px;
+      border-radius: 30px; }
+      .content .address_content .save_info:hover {
+        background: #feae32; }
+    .content .address_content table {
+      width: 880px;
+      height: auto;
+      margin: 0 0 40px 20px;
+      border: 1px solid #ccc;
+      border-bottom: none; }
+      .content .address_content table thead {
+        background: #f1f1f1;
+        font-size: 12px;
+        color: #333; }
+        .content .address_content table thead tr th {
+          padding: 15px 0;
+          text-align: center;
+          font-weight: normal;
+          border-bottom: 1px solid #ccc; }
+        .content .address_content table thead tr .consignee {
+          width: 10%; }
+        .content .address_content table thead tr .city {
+          width: 10%; }
+        .content .address_content table thead tr .city_address {
+          width: 20%; }
+        .content .address_content table thead tr .Postcodes {
+          width: 10%; }
+        .content .address_content table thead tr .tel_phone {
+          width: 15%; }
+        .content .address_content table thead tr .add_edit {
+          width: 10%; }
+        .content .address_content table thead tr .address_default {
+          width: 10%; }
+      .content .address_content table tbody td {
+        padding: 15px 0;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        font-size: 12px; }
+      .content .address_content table tbody .consignee {
+        width: 10%; }
+      .content .address_content table tbody .city {
+        width: 10%; }
+      .content .address_content table tbody .city_address {
+        width: 20%; }
+      .content .address_content table tbody .Postcodes {
+        width: 10%; }
+      .content .address_content table tbody .tel_phone {
+        width: 15%; }
+      .content .address_content table tbody .add_edit {
+        width: 10%;
+        color: #299cff;
+        cursor: pointer; }
+        .content .address_content table tbody .add_edit span:hover {
+          color: #ff9c00; }
+      .content .address_content table tbody .address_default {
+        width: 10%; }
+        .content .address_content table tbody .address_default a {
+          border: 1px solid #ff9c00;
+          color: #ff9c00;
+          padding: 2px 5px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -o-border-radius: 10px;
+          border-radius: 10px; }

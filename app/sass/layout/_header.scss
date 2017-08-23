@@ -1,0 +1,100 @@
+/*zh 2016 0310*/
+@import  "helpers/_mixins.scss"; 
+@charset "utf-8";
+header{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 11;
+}
+.topbar{
+	width: 100%;
+	font-size:12px;
+	height:115px;
+	background: rgba(28,23,20,.9);
+	.layout{
+		.bar_left{
+			float:left; 
+			height: 115px; 
+		}
+		.bar_right{
+			float:left;
+			margin-top: 20px;
+			p{
+				position: relative;
+			}
+			input{
+				width: 180px;
+				height: 32px;
+				padding-left: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #5e4c3f;
+				background-color: #150d07;
+				@include border-radius(20px)
+			}
+			input[name="code"]{
+				margin-left: 10px;
+			}
+			.code{
+				position: absolute;
+				right: 15px;
+				top:5px;
+				width: 68px;
+				height: 24px;
+			}
+			.forget{
+				margin-left:20px;
+				color: #d29c32;
+			}
+			button{
+				width: 98px;
+				height: 28px;
+				border: 1px solid #591715;
+				@include border-radius(5px);
+				margin-left: 20px;
+			}
+		}
+	}
+}
+.nav{
+	height:66px;
+	background-color:#d4bb5c;
+	@include  box-shadow(0 3px 3px rgba(0,0,0,.5));
+	li{
+		float: left;
+		a{
+			height: 66px;
+			display: inline-block;
+			padding: 0 35px;
+			color: #36251b;
+			text-align: center;
+			.chinese{
+				display: inline-block;
+				font-size: 18px;
+				font-weight: 800;
+				padding:10px 0 5px;
+			}
+			.english{
+				font-size: 14px;
+			}
+		}
+		&:hover{
+			a{
+			background: #201b16;
+			color: #fff;
+		}
+		}
+	}
+	li:first-child{
+		margin-left: 80px;
+	}
+	.active{
+		a{
+			background: #201b16;
+			color: #fff;
+		}
+	}
+}
+
+

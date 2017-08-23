@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*物流信息*/
+/*物流信息样式*/
+.logistics_container {
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column; }
+  .logistics_container .content {
+    flex: 1; }
+
+.logistics {
+  background: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 12px; }
+  .logistics .logistics_title {
+    width: 900px;
+    height: 56px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px;
+    line-height: 56px; }
+  .logistics .logistics_list {
+    width: 900px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6; }
+    .logistics .logistics_list .logistics_item {
+      width: 900px;
+      height: 33px; }
+  .logistics .logistics_tip {
+    width: 100%;
+    height: 43px;
+    line-height: 35px;
+    text-align: right; }
+    .logistics .logistics_tip span.tip {
+      padding-right: 122px; }
+    .logistics .logistics_tip a {
+      color: #54b1ff; }
+
+.logistics_item div {
+  float: left; }
+
+.logistics_item span {
+  display: inline-block; }
+
+.logistics_item .item_one {
+  width: 10px;
+  height: 33px;
+  display: inline-block;
+  position: relative; }
+  .logistics_item .item_one .circle {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #d9d9d9; }
+  .logistics_item .item_one .borderLeft {
+    width: 1px;
+    height: 13px;
+    background: #d9d9d9;
+    position: absolute;
+    left: 4px;
+    bottom: 0; }
+
+.logistics_item .container {
+  width: 880px;
+  height: 33px;
+  padding-left: 10px; }
+  .logistics_item .container span {
+    float: left;
+    height: 33px; }
+  .logistics_item .container .data {
+    width: 70px; }
+  .logistics_item .container .week {
+    width: 40px; }
+  .logistics_item .container .time {
+    width: 80px; }
+  .logistics_item .container .contain {
+    width: 650px; }
+
+.logistics_list .logistics_item:first-child .circle {
+  background: #ff9c00; }
+
+.logistics_list .logistics_item:last-child .borderLeft {
+  display: none; }
+
+.logistics .order_list {
+  border-bottom: none; }
+  .logistics .order_list .order_information {
+    width: 900px; }
+    .logistics .order_list .order_information span {
+      display: inline-block; }
+  .logistics .order_list .order_title {
+    width: 100%;
+    height: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6; }
+    .logistics .order_list .order_title div {
+      float: left; }
+    .logistics .order_list .order_title .order_img {
+      width: 80px;
+      height: 80px;
+      overflow: hidden; }
+      .logistics .order_list .order_title .order_img img {
+        width: 80px;
+        height: 80px; }
+    .logistics .order_list .order_title .order_name {
+      width: 800px;
+      padding-left: 10px; }
+      .logistics .order_list .order_title .order_name .name {
+        width: 800px; }
+      .logistics .order_list .order_title .order_name .point {
+        padding-left: 60px; }
+  .logistics .order_list .order_contain {
+    padding-bottom: 20px; }
+    .logistics .order_list .order_contain .company {
+      padding-left: 30px; }
+    .logistics .order_list .order_contain .number {
+      padding-left: 10px;
+      font-weight: 800; }
+    .logistics .order_list .order_contain .address {
+      padding-left: 10px; }
+  .logistics .order_list .logistics_status {
+    height: 40px; }
+    .logistics .order_list .logistics_status a {
+      display: inline-block;
+      width: 150px; }

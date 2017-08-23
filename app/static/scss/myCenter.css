@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*首页index*/
+/*分页共通样式*/
+.somePage {
+  width: 1000px;
+  margin: 10px auto 0;
+  text-align: right; }
+  .somePage a {
+    padding: 0 9px;
+    height: 26px;
+    line-height: 26px;
+    margin: 3px;
+    display: inline-block;
+    border: 1px solid #dbdada;
+    color: #666;
+    font-weight: 700;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+    .somePage a:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage #iconPagePrev, .somePage #iconPageNext {
+    padding: 0 9px;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+    border: 1px solid #dbdada;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -o-border-radius: 13px;
+    border-radius: 13px; }
+    .somePage #iconPagePrev:hover, .somePage #iconPageNext:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage a.current {
+    background: #ff9c00;
+    color: #fff;
+    border: 1px solid #ff9c00; }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+  .container .content {
+    width: 1000px;
+    height: auto;
+    margin: 40px auto 0;
+    flex: 1; }
+    .container .content .point_content {
+      width: 100%;
+      height: auto;
+      background: #fff;
+      margin-bottom: 40px;
+      overflow: hidden; }
+      .container .content .point_content .personal {
+        padding: 20px 0 20px 15px;
+        font-size: 16px;
+        color: #333; }
+        .container .content .point_content .personal .myPoint {
+          color: #f43500; }
+      .container .content .point_content .point_detailed {
+        padding-left: 15px; }
+        .container .content .point_content .point_detailed .point_tab {
+          padding-bottom: 20px;
+          font-size: 14px;
+          color: #999;
+          overflow: hidden; }
+          .container .content .point_content .point_detailed .point_tab span {
+            float: left;
+            padding-right: 30px; }
+          .container .content .point_content .point_detailed .point_tab p {
+            float: left; }
+            .container .content .point_content .point_detailed .point_tab p a {
+              padding-right: 30px; }
+            .container .content .point_content .point_detailed .point_tab p .active {
+              color: #f43500; }
+        .container .content .point_content .point_detailed table {
+          width: 840px;
+          height: auto;
+          border: 1px solid #ccc;
+          border-bottom: none;
+          margin-bottom: 20px; }
+          .container .content .point_content .point_detailed table thead {
+            font-size: 12px;
+            color: #666; }
+            .container .content .point_content .point_detailed table thead tr th {
+              padding: 15px 0;
+              text-align: center;
+              font-weight: normal;
+              border-bottom: 1px solid #ccc;
+              border-right: 1px solid #ccc; }
+            .container .content .point_content .point_detailed table thead tr .number {
+              width: 15%; }
+            .container .content .point_content .point_detailed table thead tr .time {
+              width: 20%; }
+            .container .content .point_content .point_detailed table thead tr .action {
+              width: 45%; }
+            .container .content .point_content .point_detailed table thead tr .point_amount {
+              width: 20%;
+              border-right: none; }
+          .container .content .point_content .point_detailed table tbody td {
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            font-size: 12px;
+            color: #666; }
+          .container .content .point_content .point_detailed table tbody .number {
+            width: 15%; }
+          .container .content .point_content .point_detailed table tbody .time {
+            width: 20%; }
+          .container .content .point_content .point_detailed table tbody .action {
+            width: 45%; }
+          .container .content .point_content .point_detailed table tbody .point_amount {
+            width: 20%;
+            border-right: none; }

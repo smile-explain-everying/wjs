@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*zh 0413*/
+.nav_block {
+  border-bottom: 1px solid #ff9c00; }
+
+.content .layout {
+  background-color: #fff;
+  padding-bottom: 20px; }
+  .content .layout ul.box {
+    padding: 20px 55px 36px;
+    border-bottom: 1px solid #f9f9f9; }
+    .content .layout ul.box li {
+      height: 162px;
+      float: left;
+      position: relative; }
+      .content .layout ul.box li a {
+        background-image: url(../images/sp1.png);
+        vertical-align: middle;
+        display: block; }
+      .content .layout ul.box li p {
+        position: absolute;
+        font-size: 18px;
+        color: #333;
+        margin-left: 25px;
+        bottom: -20px; }
+      .content .layout ul.box li:first-child {
+        padding: 0 208px 0 105px;
+        border-right: 1px solid #f9f9f9; }
+        .content .layout ul.box li:first-child a {
+          width: 128px;
+          height: 94px;
+          background-position: 0 -256px;
+          margin-top: 45px; }
+          .content .layout ul.box li:first-child a:hover {
+            background-position: 0 -380px; }
+      .content .layout ul.box li:last-child {
+        padding: 0 0px 0 210px; }
+        .content .layout ul.box li:last-child a {
+          width: 94px;
+          height: 124px;
+          background-position: -128px -256px;
+          margin-top: 15px; }
+          .content .layout ul.box li:last-child a:hover {
+            background-position: -128px -380px; }
+        .content .layout ul.box li:last-child p {
+          width: 140px;
+          margin-left: 0px; }
+  .content .layout .recharge {
+    margin-top: 35px; }
+    .content .layout .recharge p {
+      text-align: left;
+      width: 360px;
+      padding-left: 310px;
+      color: #333;
+      margin-bottom: 12px; }
+  .content .layout .recharge_msg {
+    margin-top: 35px; }
+    .content .layout .recharge_msg p {
+      padding-left: 310px;
+      width: 400px;
+      color: #696969; }
+    .content .layout .recharge_msg ul {
+      margin: 35px 0 20px; }
+      .content .layout .recharge_msg ul li {
+        padding-left: 310px;
+        color: #696969;
+        margin-bottom: 12px; }
+        .content .layout .recharge_msg ul li:before {
+          content: '●';
+          color: #ff9c00;
+          float: left;
+          font-size: 16px;
+          margin: -2px 5px 0 0; }
+    .content .layout .recharge_msg a {
+      width: 200px;
+      color: #fff;
+      margin-left: 40px; }

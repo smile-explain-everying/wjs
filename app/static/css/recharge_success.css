@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*首页index*/
+.content {
+  /*display: flex;*/
+  min-height: 65vh;
+  /*flex-direction:column;*/ }
+  .content .recharge_success {
+    margin-top: 40px; }
+    .content .recharge_success .layout {
+      background-color: #fff;
+      padding: 36px 15px 40px; }
+      .content .recharge_success .layout p {
+        text-align: center; }
+        .content .recharge_success .layout p:first-child {
+          font-size: 24px;
+          margin-bottom: 34px; }
+          .content .recharge_success .layout p:first-child i {
+            width: 34px;
+            height: 24px;
+            background-position: 0 -489px;
+            margin: 0 12px 0 -15px; }
+        .content .recharge_success .layout p:nth-child(2) {
+          color: #696969;
+          font-size: 18px;
+          margin-bottom: 18px; }
+          .content .recharge_success .layout p:nth-child(2) span {
+            color: #ff9c00;
+            margin-left: 15px; }
+        .content .recharge_success .layout p:nth-child(3) {
+          color: #999999;
+          margin-bottom: 20px; }
+      .content .recharge_success .layout a {
+        color: #fff;
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px; }

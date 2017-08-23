@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*首页index*/
+/*分页共通样式*/
+.somePage {
+  width: 1000px;
+  margin: 10px auto 0;
+  text-align: right; }
+  .somePage a {
+    /*padding: 0 9px;*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dbdada;
+    color: #666;
+    font-weight: 700;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+    .somePage a:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage .iconPagePrev, .somePage .iconPageNext {
+    padding: 0 9px;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+    border: 1px solid #dbdada;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -o-border-radius: 13px;
+    border-radius: 13px; }
+    .somePage .iconPagePrev:hover, .somePage .iconPageNext:hover {
+      background: #ff9c00;
+      color: #fff;
+      border: 1px solid #ff9c00; }
+  .somePage a.current {
+    background: #ff9c00;
+    color: #fff;
+    border: 1px solid #ff9c00; }
+
+.title {
+  padding: 22px 15px;
+  font-size: 18px; }
+
+.col_ff {
+  color: #ff9c00; }
+
+.pl50 {
+  padding-left: 50px; }
+
+.investment {
+  background: #fff;
+  margin-bottom: 10px; }
+  .investment .amount {
+    padding: 20px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #e6e6e6; }
+    .investment .amount .money {
+      font-size: 20px;
+      padding-left: 10px;
+      color: #ff9c00; }
+  .investment .product_title {
+    padding: 30px 0; }
+  .investment table {
+    width: 578px;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .investment table td {
+      width: 25%; }
+      .investment table td span {
+        margin-bottom: 30px; }
+    .investment table tbody {
+      font-size: 12px; }
+      .investment table tbody span {
+        line-height: 80px; }
+    .investment table .colors {
+      color: #ff9c00;
+      font-size: 26px; }
+    .investment table .type {
+      color: #ff9c00;
+      font-size: 14px; }
+
+.cash .cash_coupon {
+  margin-bottom: 0;
+  margin-top: 20px; }
+  .cash .cash_coupon tbody {
+    font-size: 14px; }
+    .cash .cash_coupon tbody span {
+      line-height: 60px; }
+
+.cash .information {
+  font-size: 16px;
+  border-top: 1px solid #e6e6e6;
+  padding: 20px 0; }
+  .cash .information .col_red {
+    color: #f43500;
+    padding: 0 10px; }
+
+.tip {
+  font-size: 12px;
+  padding-top: 10px; }
+  .tip div {
+    padding: 16px 0 20px; }
+    .tip div span {
+      display: block;
+      color: #999; }
+
+.paid_cash {
+  background: #fff; }
+  .paid_cash span {
+    line-height: 58px;
+    font-size: 16px; }
+  .paid_cash .supplement {
+    font-size: 14px; }
+
+.read_agreement {
+  padding: 40px 0 30px;
+  text-align: center;
+  font-size: 12px; }
+  .read_agreement input {
+    display: none; }
+  .read_agreement .chk_1 + label {
+    background-color: #f9f9f9;
+    border: 1px solid #999;
+    padding: 5px;
+    display: inline-block;
+    position: relative; }
+  .read_agreement .chk_1:checked + label {
+    background-color: #f9f9f9;
+    border: 1px solid #ff9c00;
+    color: #243441; }
+  .read_agreement .chk_1:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    color: #ff9c00;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 1px 0 0 0;
+    vertical-align: text-top; }
+  .read_agreement span {
+    padding-left: 10px; }
+  .read_agreement a {
+    color: #ff9c00; }
+
+.btns a {
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 5px; }
+
+.btns .cancel {
+  border: 1px solid #999;
+  background: #f9f9f9;
+  color: #999;
+  cursor: pointer; }
+
+.notes {
+  padding: 40px 0 0;
+  font-size: 12px;
+  color: #999; }

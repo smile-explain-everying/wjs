@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*产品详情信息*/
+/*我的账户详情页*/
+.myInformation {
+  width: 970px;
+  height: 98px;
+  padding: 20px 15px;
+  color: #6d6d6d;
+  background: #fff;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  .myInformation li {
+    float: left; }
+  .myInformation .headPortrait {
+    width: 98px;
+    height: 98px; }
+    .myInformation .headPortrait img {
+      width: 98px;
+      height: 98px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%; }
+  .myInformation .myName {
+    width: 180px;
+    height: 98px;
+    padding: 0 0 0 30px;
+    text-align: left; }
+    .myInformation .myName .phone {
+      padding-left: 10px; }
+    .myInformation .myName .name {
+      display: inline-block;
+      margin-top: 20px; }
+  .myInformation .myIp {
+    width: 250px;
+    height: 98px;
+    line-height: 98px;
+    padding: 0 0 0 20px;
+    text-align: left; }
+  .myInformation .riskAssessment {
+    width: 150px;
+    height: 98px;
+    padding: 0 0 0 30px;
+    line-height: 98px; }
+    .myInformation .riskAssessment .riskType {
+      display: inline-block;
+      width: 70px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      background: #f3f3f3;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      margin-left: 10px; }
+  .myInformation .grade {
+    width: 100px;
+    height: 98px;
+    text-align: center; }
+    .myInformation .grade .grade_list {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-top: 30px; }
+    .myInformation .grade .phone {
+      background-position: -159px -51px; }
+    .myInformation .grade .idCard {
+      background-position: -189px -51px; }
+    .myInformation .grade .message {
+      background-position: -219px -51px; }
+    .myInformation .grade .phone.active {
+      background-position: -159px -21px; }
+    .myInformation .grade .idCard.active {
+      background-position: -189px -21px; }
+    .myInformation .grade .message.active {
+      background-position: -219px -21px; }
+
+.myOrder {
+  width: 970px;
+  padding: 0 15px;
+  color: #6d6d6d;
+  background: #fff;
+  margin-bottom: 40px; }
+  .myOrder .myOrder_list {
+    height: 190px; }
+    .myOrder .myOrder_list li {
+      width: 258px;
+      height: 148px;
+      border: 1px solid #c8c8c8;
+      float: left;
+      margin-right: 25px;
+      margin-top: 20px;
+      text-align: center;
+      line-height: 148px; }
+    .myOrder .myOrder_list li:first-child {
+      margin-left: 70px; }
+  .myOrder .look {
+    height: 270px; }
+    .myOrder .look li {
+      width: 228px;
+      height: 228px;
+      margin-top: 20px;
+      border: 1px solid #c8c8c8;
+      border-right: none;
+      float: left; }
+      .myOrder .look li a {
+        width: 228px;
+        height: 228px; }
+      .myOrder .look li img {
+        width: 228px;
+        height: 228px; }
+      .myOrder .look li:hover {
+        border: 1px solid #ff9c00; }
+    .myOrder .look li:first-child {
+      margin-left: 27px; }
+    .myOrder .look li:last-child {
+      border-right: 1px solid #c8c8c8; }
+    .myOrder .look li:last-child:hover {
+      border-right: 1px solid #ff9c00; }
+
+.personal_title {
+  width: 1000px;
+  height: 40px;
+  font-size: 18px;
+  margin: 0 auto; }
+  .personal_title span {
+    padding-left: 15px; }

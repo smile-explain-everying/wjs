@@ -1,0 +1,30 @@
+.paySuccess .layout {
+  min-height: 557px;
+  background-color: #fff;
+  padding-top: 30px;
+  font-family: "microsoft yahei"; }
+  .paySuccess .layout div {
+    text-align: center;
+    position: relative;
+    top: 158px; }
+    .paySuccess .layout div p {
+      padding-bottom: 47px; }
+    .paySuccess .layout div .StartPage_title {
+      font-size: 28px;
+      color: #eb6100; }
+    .paySuccess .layout div .StartPage_prompt {
+      color: #999999;
+      font-size: 16px; }
+    .paySuccess .layout div .StartPage_btn {
+      margin: 0 auto;
+      width: 185px;
+      height: 40px;
+      background: #eb6100;
+      display: block;
+      line-height: 40px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -o-border-radius: 30px;
+      border-radius: 30px;
+      color: #fff;
+      cursor: pointer; }

@@ -1,0 +1,99 @@
+@charset "utf-8";
+/*分页共通样式*/
+@import  "helpers/_mixins.scss";  
+
+.banner{
+	position: relative; 
+	height:552px;
+	&:hover{
+		.layout .next, .layout .prev{
+			display:block;
+		}
+	}
+	ul{
+		li{
+			width:1280px;
+			height:552px;
+			position: absolute;
+			opacity:1;
+			overflow:hidden;
+			a{
+				width: 100%;
+    			height: 100%;
+    			display:block;
+			}
+		}
+	}
+	.layout{
+		@extend %indexlayout;
+		position: relative;
+		height:552px;
+		.controls{
+			position: absolute;
+			bottom:20px;
+			left:550px;
+		    height: 30px;
+		    width:200px;
+		    line-height: 30px;
+		    text-align: center;
+		    z-index: 10;
+		    i{
+				display: inline-block;
+			    width: 12px;
+			    height: 12px;
+			    margin: 0 5px;
+			    background:none;
+			    background-color: #fff;
+			    cursor: pointer;
+			    border-radius: 50%;
+			    @include  box-shadow(0 3px 3px rgba(0,0,0,.5));
+			}
+			.now{
+				background-color:#36251b;
+			}
+		}
+		
+		.wrap{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			.row{
+				width: 100%;
+				height: 184px;
+				border-bottom: 2px solid #d1d0cc; 
+				@extend %box-sizing;
+				.low{
+					width: 256px;
+					height: 100%;
+					float: left;
+					border-right: 1px solid #d1d0cc; 
+				    @extend %box-sizing;
+				}
+				.low:last-child{
+					border-right:none;
+				}
+				.light1{
+					background: rgba(0,0,0,0.2);
+				}
+				.light2{
+					background: rgba(255,255,255,0);
+				}
+				.light3{
+					background: rgba(0,0,0,0.4);
+				}
+				.light4{
+					background: rgba(0,0,0,0.6);
+				}
+				.light5{
+					background: rgba(0,0,0,0.7);
+				}
+			}
+			.row:last-child{
+				border-bottom: none;
+			}
+		}
+	}	
+}
