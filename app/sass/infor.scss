@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*首页index*/
+@import  "helpers/_mixins.scss";                  //常用变量定义
+
+.content{
+	.head_pic{
+		height: 181px;
+		width: 1280px;
+		margin:0 auto;
+
+	}
+	.question{
+		width: 857px;
+		height: 978px;
+		background: #4e3727;
+		margin:30px 125px 0 297px;
+	}
+}

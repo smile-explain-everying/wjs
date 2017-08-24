@@ -62,6 +62,10 @@ input, textarea, select {
 input:disabled {
   background-color: #ebebe4; }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px  inset;
+  -webkit-text-fill-color: #fff; }
+
 fieldset, img {
   border: 0; }
 
@@ -231,12 +235,14 @@ header {
     height: 115px; }
   .topbar .layout .bar_right {
     float: left;
-    margin-top: 20px; }
-    .topbar .layout .bar_right p {
+    margin-top: 20px;
+    color: #fff; }
+    .topbar .layout .bar_right .po_re {
       position: relative; }
     .topbar .layout .bar_right input {
       width: 180px;
       height: 32px;
+      color: #fff;
       padding-left: 10px;
       margin-bottom: 10px;
       border: 1px solid #5e4c3f;
@@ -257,14 +263,48 @@ header {
       margin-left: 20px;
       color: #d29c32; }
     .topbar .layout .bar_right button {
-      width: 98px;
+      width: 90px;
       height: 28px;
+      line-height: 28px;
       border: 1px solid #591715;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px;
-      margin-left: 20px; }
+      margin-left: 20px;
+      margin-top: 5px; }
+      .topbar .layout .bar_right button i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin: 2px;
+        background: url(../images/ico.png); }
+  .topbar .layout .bar_next {
+    display: none;
+    float: right;
+    color: #fff;
+    font-size: 16px; }
+    .topbar .layout .bar_next .info {
+      float: right;
+      line-height: 115px; }
+    .topbar .layout .bar_next .picture {
+      float: left;
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+      margin-top: 33px;
+      margin-right: 20px; }
+      .topbar .layout .bar_next .picture img {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%; }
+    .topbar .layout .bar_next a {
+      float: right;
+      color: #fff;
+      line-height: 115px;
+      margin: 0 100px 0 20px; }
 
 .nav {
   height: 66px;
@@ -298,124 +338,15 @@ header {
     color: #fff; }
 
 /*zh 2016 0310*/
-.footer {
-  background-color: #4e4e4e;
-  padding: 20px 0 15px; }
-  .footer .footer_link {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #9c9b9b; }
-    .footer .footer_link ul {
-      float: left; }
-      .footer .footer_link ul li {
-        font-size: 12px;
-        color: #999999; }
-        .footer .footer_link ul li:first-child {
-          font-size: 14px;
-          color: #fff;
-          margin-bottom: 18px; }
-        .footer .footer_link ul li a {
-          color: #999999; }
-    .footer .footer_link .footer_col_1, .footer .footer_link .footer_col_2 {
-      width: 160px; }
-    .footer .footer_link .footer_col_3 {
-      width: 155px; }
-    .footer .footer_link .footer_col_4 {
-      width: 250px; }
-    .footer .footer_link .footer_col_5 {
-      float: right; }
-      .footer .footer_link .footer_col_5 li {
-        float: left; }
-        .footer .footer_link .footer_col_5 li p {
-          font-size: 12px;
-          color: #999999;
-          text-align: center; }
-        .footer .footer_link .footer_col_5 li img {
-          width: 100px;
-          height: 100px; }
-        .footer .footer_link .footer_col_5 li:last-child {
-          margin-left: 22px; }
-    .footer .footer_link .links {
-      color: #999999;
-      margin: 20px 0 38px; }
-      .footer .footer_link .links a {
-        margin-left: 6px;
-        color: #999999; }
-  .footer .footer_bar {
-    margin-top: 20px; }
-    .footer .footer_bar p {
-      font-size: 12px;
-      color: #999999;
-      text-align: center; }
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px; }
 
-.nav_sidebar_right {
-  position: fixed;
-  right: 50%;
-  bottom: 2%;
-  margin-right: -580px; }
-  .nav_sidebar_right li {
-    margin-bottom: 5px; }
-    .nav_sidebar_right li:first-child .nologin, .nav_sidebar_right li:first-child .login {
-      position: absolute;
-      display: none;
-      top: -58px;
-      right: -35px;
-      z-index: 80;
-      border: 1px solid #ff9c00;
-      background-color: #fff;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -o-border-radius: 8px;
-      border-radius: 8px; }
-      .nav_sidebar_right li:first-child .nologin .arrow_pic, .nav_sidebar_right li:first-child .login .arrow_pic {
-        position: absolute;
-        top: 25px;
-        right: 50px;
-        width: 15px;
-        height: 15px;
-        background-position: -56px -72px; }
-      .nav_sidebar_right li:first-child .nologin .check_tit, .nav_sidebar_right li:first-child .login .check_tit {
-        text-align: center;
-        width: 120px;
-        height: 26px;
-        line-height: 26px;
-        font-size: 12px; }
-    .nav_sidebar_right li a {
-      display: inline-block;
-      width: 45px;
-      height: 45px;
-      background-image: url(../images/sprite.png);
-      vertical-align: middle; }
-    .nav_sidebar_right li .nockeckin {
-      background-position: 0 -118px; }
-      .nav_sidebar_right li .nockeckin:hover .nologin {
-        display: block; }
-    .nav_sidebar_right li .ckeckinon {
-      background-position: -45px -118px; }
-      .nav_sidebar_right li .ckeckinon:hover .login {
-        display: block; }
-    .nav_sidebar_right li .xiaoman {
-      background-position: 0 -168px;
-      position: relative; }
-      .nav_sidebar_right li .xiaoman img {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        right: 50px;
-        top: -28px;
-        display: none; }
-      .nav_sidebar_right li .xiaoman:hover {
-        background-position: -45px -168px; }
-        .nav_sidebar_right li .xiaoman:hover img {
-          display: block; }
-    .nav_sidebar_right li .focusus {
-      background-position: 0 -218px; }
-      .nav_sidebar_right li .focusus:hover {
-        background-position: -45px -218px; }
-    .nav_sidebar_right li .contact {
-      background-position: 0 -268px; }
-      .nav_sidebar_right li .contact:hover {
-        background-position: -45px -268px; }
-    .nav_sidebar_right li .backtop {
-      background-position: 0 -318px; }
-      .nav_sidebar_right li .backtop:hover {
-        background-position: -45px -318px; }
+footer .footer_list {
+  margin: 20px 0 10px 0; }
+  footer .footer_list span {
+    display: inline-block;
+    padding: 0 10px; }
+  footer .footer_list a {
+    color: #fff; }

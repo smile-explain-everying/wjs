@@ -95,5 +95,20 @@
 				border-bottom: none;
 			}
 		}
+		.next, .prev{
+			position: absolute;
+			top:50%;
+			margin-top:45px;
+			width:50px;
+			height:50px;
+			z-index:20;
+			display:none;
+		}
+		.next {	
+				right:-40px;
+		}
+		.prev {
+				left:-80px;
+		}
 	}	
 }

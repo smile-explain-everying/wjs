@@ -7,6 +7,79 @@
 	width:1280px;
 	margin:0 auto;
 	padding:0px;
+} 
+.announcement{
+	margin-top: 30px;
+	height:44px;
+	line-height:44px;
+	background-color:#36251b;
+	overflow:hidden;
+	color: #fff;
+	ul{
+		padding-left:10px;
+		li{
+			a{
+				color:$seColor;
+			}
+			
+		}
+	}
+	
+	span{
+		
+	}
+	i{
+		width:14px;
+		height:20px;
+		margin:-2px 6px 0 0;
+		background-position:-39px 0;
+	}
+	.inforeveal{
+		background-color:$seColor;
+		font-size:14px;
+		width:70px;
+		height:20px;
+		line-height:20px;
+		color:$whiteColor;
+		margin:0 10px;
+		@include border-radius(10px)
+	}
+}
+.announcementshow{
+	height:140px;
+	font-size:14px;
+	p{
+		margin:30px 0 10px;
+	}
+	.announcementshow_l{
+		width:380px;
+		i{
+			background-position:-103px -364px;
+			
+		}
+	}
+	.announcementshow_m{
+		width:380px;
+		i{
+			background-position:-128px -364px;
+			
+		}
+	}
+	.announcementshow_r{
+		i{
+			background-position:-153px -364px;
+			
+		}
+	}
+	span{
+		color:$seColor;
+		font-size:28px;
+	}
+	i{
+		width:25px;
+		height:25px;
+		margin:-12px 10px 0 0;
+	}
 }
 .content{
 	.new_list{
@@ -110,40 +183,55 @@
 				height: 30px;
 			}
 			.about_txt{
-				font-size: 12px;
+				a{
+					font-size: 12px;
 				color: #fff;
+				}
+				
 			}
 		}
 		.picture{
 			float: left;
 			margin-left: 40px;
+			width: 300px;
+			height: 226px;
 		}
-		#pic{
-	position:relative;
-	overflow:hidden;
-	height:400px;
-	width:890px;
-	z-index:2;
-	/*margin:0 auto 100px ;*/
-	float: left;
-	ul{
-		width:100%;
-		height:100%;
-		position:absolute;
-		top:0;
-		left:0;
-		li{
-			position:absolute;
+		.about_word{
+			float: left;
+			width: 360px;
+			height:213px;
+			color: #fff;
+			margin:0 0 0 40px;
+			span{
+				display: inline-block;
+			}
+			.blon{
+				font-weight: 800;
+				padding-bottom: 10px;
+			}
+			.ab_first{
+				padding-bottom: 120px;
+			}
+			.ab_left{
+				float: left;
+			}
+			.ab_right{
+				float: right;
+				a{
+					display: block;
+				    width: 96px;
+				    height: 36px;
+				    margin: 5px 0;
+				}
+			}
+			.ios{
+					width: 96px;
+					height: 91px;
+					display: inline-block;
+				}
 		}
-		img{
-			position:relative;
-			top:0;
-			left:0;
-		}
-	}
-}
-	}
-}
 
+	}
+}
 
 
