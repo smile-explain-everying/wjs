@@ -178,7 +178,7 @@
     .content .video .title .title_s {
       color: #4a3325;
       padding-left: 15px; }
-  .content .video img {
+  .content .video video {
     display: block;
     width: 442px;
     height: 250px;

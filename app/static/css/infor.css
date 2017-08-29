@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*首页index*/
+.content .account {
+  position: relative; }
+
 .content .head_pic {
   height: 181px;
   width: 1280px;
@@ -10,3 +13,184 @@
   height: 978px;
   background: #4e3727;
   margin: 30px 125px 0 297px; }
+  .content .question .title {
+    width: 700px;
+    line-height: 35px;
+    float: right;
+    margin: 20px 20px 0 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e2d475;
+    color: #e2d475;
+    font-size: 24px;
+    text-align: right; }
+    .content .question .title span {
+      display: inline-block;
+      width: 5px;
+      height: 23px;
+      background: #e2d475;
+      margin: 7px 0 0 10px;
+      float: right; }
+  .content .question .question_list {
+    width: 730px;
+    padding: 100px 20px 0 110px; }
+    .content .question .question_list .list {
+      width: 728px;
+      margin-bottom: 20px;
+      position: relative;
+      border: 1px solid #a27253; }
+      .content .question .question_list .list .name {
+        position: absolute;
+        left: 0;
+        top: -12px;
+        display: inline-block;
+        background: #4e3727;
+        color: #a27253; }
+      .content .question .question_list .list select {
+        width: 320px;
+        height: 30px;
+        background: #fff;
+        margin-left: 30px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px; }
+      .content .question .question_list .list table {
+        width: 100%;
+        height: 100%; }
+        .content .question .question_list .list table tr {
+          line-height: 30px;
+          height: 60px; }
+          .content .question .question_list .list table tr td:first-child {
+            width: 30%;
+            text-align: right;
+            color: #a27253; }
+            .content .question .question_list .list table tr td:first-child span {
+              color: #9d3724; }
+          .content .question .question_list .list table tr td:last-child {
+            width: 70%; }
+            .content .question .question_list .list table tr td:last-child input {
+              width: 320px;
+              height: 30px;
+              background: #fff;
+              margin-left: 30px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -o-border-radius: 5px;
+              border-radius: 5px; }
+            .content .question .question_list .list table tr td:last-child input[name="mailbox"] {
+              width: 174px; }
+            .content .question .question_list .list table tr td:last-child .register {
+              width: 200px;
+              height: 30px; }
+        .content .question .question_list .list table .mailbox td select {
+          width: 134px;
+          margin-left: 10px; }
+        .content .question .question_list .list table .erro {
+          color: #9d3724;
+          display: block;
+          margin-left: 30px;
+          font-size: 12px;
+          display: none; }
+  .content .question .list_submit .rule {
+    padding: 40px 0 30px;
+    text-align: center;
+    font-size: 12px;
+    height: 50px; }
+    .content .question .list_submit .rule input {
+      display: none; }
+    .content .question .list_submit .rule span {
+      float: left;
+      color: #9c7e69;
+      margin-left: 10px; }
+    .content .question .list_submit .rule a {
+      float: left;
+      color: #f8f285; }
+    .content .question .list_submit .rule .chk_1:checked + label {
+      background-color: #eaeaea;
+      border: 1px solid #b2b2b2;
+      color: #243441; }
+    .content .question .list_submit .rule .chk_1 + label {
+      float: left;
+      background-color: #eaeaea;
+      border: 1px solid #999;
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      margin-left: 30px; }
+    .content .question .list_submit .rule .chk_1:checked + label:after {
+      content: '\2714';
+      position: absolute;
+      top: -7px;
+      left: 0px;
+      color: #424242;
+      width: 100%;
+      text-align: center;
+      font-size: 1.8em;
+      padding: 1px 0 0 0;
+      vertical-align: text-top; }
+  .content .question .list_submit .re_sum {
+    position: relative; }
+    .content .question .list_submit .re_sum img {
+      position: absolute;
+      left: 140px;
+      top: 14px;
+      width: 93px;
+      height: 32px; }
+    .content .question .list_submit .re_sum #re_submit {
+      width: 85px;
+      height: 30px;
+      display: inline-block;
+      border: 1px solid #a6a6a6;
+      background: #f3f3f3;
+      text-align: center;
+      color: #000; }
+
+.content .nav_left {
+  position: absolute;
+  left: 159px;
+  top: 0;
+  width: 230px;
+  height: 338px;
+  background: #e19232;
+  background: -moz-linear-gradient(left, #e29232, #faa834);
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#e19232), to(#faa834));
+  background: -o-linear-gradient(left, #e29232, #faa834);
+  -webkit-border-radius: 0 0 50px 0;
+  -moz-border-radius: 0 0 50px 0;
+  -o-border-radius: 0 0 50px 0;
+  border-radius: 0 0 50px 0; }
+  .content .nav_left ul {
+    width: 100%;
+    height: 100%; }
+    .content .nav_left ul li {
+      width: 100%;
+      height: 58px;
+      border-bottom: 1px solid #f4cc99; }
+      .content .nav_left ul li a {
+        display: inline-block;
+        font-size: 22px;
+        color: #583b28;
+        line-height: 60px; }
+        .content .nav_left ul li a i {
+          width: 40px;
+          height: 40px;
+          margin: 0 15px 0 35px;
+          background: url(../images/navleft.png); }
+      .content .nav_left ul li:hover a {
+        width: 100%;
+        height: 50px;
+        margin-top: 4px;
+        line-height: 50px;
+        color: #fff;
+        background: #583b28; }
+        .content .nav_left ul li:hover a i {
+          background: url(../images/navlefts.png); }
+    .content .nav_left ul .active a {
+      width: 100%;
+      height: 50px;
+      margin-top: 4px;
+      line-height: 50px;
+      color: #fff;
+      background: #583b28; }
+      .content .nav_left ul .active a i {
+        background: url(../images/navlefts.png); }

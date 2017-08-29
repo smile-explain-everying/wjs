@@ -2,7 +2,7 @@
 /*首页index*/
 @import  "helpers/_mixins.scss";                  //常用变量定义
 @import  "components/banner.scss";                  //banner
-
+ 
 %indexlayout {
 	width:1280px;
 	margin:0 auto;
@@ -107,7 +107,7 @@
 				padding-left: 15px;
 			}
 		}
-		img{
+		video{
 			display: block;
 			width: 442px;
 			height: 250px;

@@ -1,0 +1,144 @@
+ @charset "utf-8";
+/*首页index*/
+@import  "helpers/_mixins.scss";                  //常用变量定义
+
+.content{
+	.account{
+		position: relative;
+	}
+	.head_pic{
+		height: 181px;
+		width: 1280px;
+		margin:0 auto;
+
+	}
+	.title{
+		line-height: 50px;
+		font-size: 16px;
+		color: #fff;
+		background: #4e3727;
+		margin: 20px auto;
+		span{
+			padding-left: 30px;
+		}
+	}
+	.vip_left{
+		width: 300px;
+		float: left;
+		.vip_info{
+			background: #4e3727;
+			text-align: center;
+			img{
+				width: 100px;
+				height: 100px;
+				margin:20px auto;
+				@include border-radius(50%)
+			}
+			.name{
+				font-size: 20px;
+				font-weight: 800;
+				color: #fff;
+				padding-bottom: 20px;
+			}
+			.menu{
+				line-height: 50px;
+				font-size: 16px;
+				border-top: 1px solid #fff;
+				text-align: center;
+				a{
+					padding: 0 15px;
+					color: #fff;
+				}
+			}
+		}
+	    .vip_menu{
+	    	margin-top: 30px; 
+	    	background: #4e3727;
+			text-align: center;
+			p{
+				font-size: 16px;
+				color: #fff;
+				padding:20px 0;
+				border-bottom:1px solid #fff;
+			}
+			.menu_list{
+				padding: 10px;
+				a{
+					display: inline-block;
+					padding: 5px 30px;
+					color: #fff;
+					border: 1px solid #fff;
+					float: left;
+					margin: 10px 0;
+				}
+				a.edit{
+					float: right;
+				}
+			}
+	    }
+	}
+	.vip_right{
+		background:#4e3727;
+		width: 900px;
+		float: right; 
+		.menu_item{
+			padding: 0 20px;
+			display: none;
+            .name{
+            	color: #fff;
+            	font-size: 16px;
+            	padding: 10px 0;
+            	border-bottom:1px solid #fff;
+            }
+            table{
+            	margin: 30px 0 30px 0;
+            	width: 100%;
+            	font-size: 14px;
+            	color: #fff;
+            	tr{
+            		height: 50px;
+            		td:first-child{
+            			width:20%;
+            			text-align: right;
+            		}
+            		td:last-child{
+            			width: 80%;
+            			input{
+            				width: 200px;
+            				height: 30px;
+            				border: 1px solid #fff;
+            				color: #fff;
+            				background: #4e3727;
+            				margin-left: 30px;
+            			}
+            		}
+            		a{
+            			margin-left: 30px;
+            			display: inline-block;
+            			padding: 5px 20px;
+            			color: #4e3727;
+            			background: #d4bb5c;
+            			font-size: 16px;
+            		}
+            	}
+            }
+            .unlode{
+            	margin-bottom: 30px;
+            	img{
+            		width: 100px;
+					height: 100px;
+					margin:20px auto;
+					margin-left: 30px;
+            	}
+            	a{
+            		display: inline-block;
+            		padding: 5px 15px;
+            		color: #4e3727;
+            		background: #d4bb5c;
+            		font-size: 16px;
+            		margin-left: 30px;
+            	}
+            }
+		}
+	}
+}

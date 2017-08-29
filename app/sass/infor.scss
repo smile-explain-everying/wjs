@@ -3,6 +3,9 @@
 @import  "helpers/_mixins.scss";                  //常用变量定义
 
 .content{
+	.account{
+		position: relative;
+	}
 	.head_pic{
 		height: 181px;
 		width: 1280px;
@@ -10,9 +13,226 @@
 
 	}
 	.question{
-		width: 857px;
+		width: 857px; 
 		height: 978px;
 		background: #4e3727;
 		margin:30px 125px 0 297px;
+		.title{
+			width: 700px;
+			line-height: 35px;
+			float: right;
+			margin:20px 20px 0 0;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #e2d475;
+			color: #e2d475;
+			font-size: 24px;
+			text-align: right;
+			span{
+				display: inline-block;
+				width: 5px;
+				height: 23px;
+				background: #e2d475;
+				margin: 7px 0 0 10px;
+				float: right;
+			}
+		}
+		.question_list{
+			width: 730px;
+			padding:100px 20px 0 110px;
+			.list{
+				width: 728px;
+				margin-bottom: 20px;
+				position: relative;
+				border: 1px solid #a27253;
+				.name{
+					position: absolute;
+					left: 0;
+					top:-12px;
+					display: inline-block;
+					background: #4e3727;
+					color: #a27253;
+				}
+				select{
+					width: 320px;
+					height: 30px;
+					background: #fff;
+					margin-left: 30px;
+					@include border-radius(5px);
+				}
+				table{
+					width: 100%;
+					height: 100%;
+					tr{
+						line-height: 30px;
+						height:60px;
+						td:first-child{
+							width:30%;
+							text-align: right;
+							color: #a27253;
+							span{
+								color: #9d3724;
+							}
+						}
+						td:last-child{
+							width: 70%;
+							input{
+								width: 320px;
+								height: 30px;
+								background: #fff;
+								margin-left: 30px;
+								@include border-radius(5px);
+							}
+							input[name="mailbox"]{
+								width: 174px;
+							}
+							.register{
+								width: 200px;
+								height: 30px;
+							}
+						}
+					}
+					.mailbox{
+						td{
+							select{
+								width: 134px;
+								margin-left: 10px;
+							}
+						}
+					}
+					.erro{
+						color:#9d3724;
+						display: block;
+						margin-left: 30px;
+						font-size: 12px;
+						display: none;
+					}
+
+				}
+			}
+		}
+		.list_submit{
+			.rule{
+				padding: 40px 0 30px;
+				text-align: center;
+				font-size: 12px;
+				height: 50px;
+				input{
+					display: none;
+				}
+				span{
+					float: left;
+					color: #9c7e69;
+					margin-left: 10px;
+				}
+				a{
+					float: left;
+					color: #f8f285;
+				}
+				.chk_1:checked + label {
+					background-color: #eaeaea;
+					border: 1px solid #b2b2b2;
+					color: #243441;
+				}
+				.chk_1 + label {
+					float: left;
+					background-color: #eaeaea;
+					border: 1px solid #999;
+					padding: 10px;
+					display: inline-block;
+					position: relative;
+					margin-left: 30px;
+				}
+				.chk_1:checked + label:after {
+					content: '\2714';
+					position: absolute;
+					top: -7px;
+					left: 0px;
+					color: #424242;
+					width: 100%;
+					text-align: center;
+					font-size: 1.8em;
+					padding: 1px 0 0 0;
+					vertical-align: text-top;
+				}
+			}
+			.re_sum{
+				position: relative;
+				img{
+					position: absolute;
+					left: 140px;
+					top: 14px;
+					width: 93px;
+					height: 32px
+				}
+				#re_submit{
+					width: 85px;
+					height: 30px;
+					display: inline-block;
+					border: 1px solid #a6a6a6;
+					background: #f3f3f3;
+					text-align: center;
+					color: #000;
+				}
+			}
+		}
+	}
+	.nav_left{
+		position: absolute;
+		left: 159px;
+		top:0;
+		width: 230px;
+		height: 338px;
+		background:#e19232;
+		background:-moz-linear-gradient(left, rgba(226, 146, 50, 1), rgba(250, 168, 52, 1));  
+		background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#e19232), to(#faa834));  
+		background:-o-linear-gradient(left, rgba(226, 146, 50, 1), rgba(250, 168, 52, 1));
+		@include border-radius(0 0 50px 0);
+		ul{
+			width: 100%;
+			height: 100%;
+			li{
+				width: 100%;
+				height: 58px;
+				border-bottom: 1px solid #f4cc99;
+				a{
+					display: inline-block;
+					font-size:22px;
+					color: #583b28;
+					line-height: 60px;
+					i{
+						width: 40px;
+						height: 40px;
+						margin:0 15px 0 35px;
+						background: url(../images/navleft.png);
+					}
+				}
+				&:hover{
+					a{
+						width: 100%;
+						height: 50px;
+						margin-top:4px;
+						line-height: 50px;
+						color: #fff;
+						background: #583b28;
+						i{
+							background: url(../images/navlefts.png);
+						}
+					}
+				}
+			}
+			.active{
+				a{
+					width: 100%;
+					height: 50px;
+					margin-top:4px;
+					line-height: 50px;
+					color: #fff;
+					background: #583b28;
+					i{
+						background: url(../images/navlefts.png);
+					}
+				}
+			}
+		}
 	}
 }

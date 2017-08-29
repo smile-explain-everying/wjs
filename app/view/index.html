@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"> 
 	<title>维加斯国际</title>
 	<meta name="keywords" content=""> 
-	<meta name="description" content="">
+	<meta name="description" content=""> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit" />
 	<meta name="viewport" content="width=1000,initial-scale=1,maximum-scale=1,user-scalable=yes">
@@ -23,7 +23,6 @@
 </head>  
 <body>
 	<header>
-
 		<div class="IE_alert" style="display: none;">
 			<div class="IE-style" style="height:100%;width:100%;"></div>
 		</div>
@@ -117,9 +116,9 @@
 						<span class="english">ACCOUNT</span>
 					</a>
 				</li>
-				<ul/>
-			</nav>
-		</header>
+			<ul/>
+		</nav>
+	</header>
 		<!-- banner -->
 		<div class="banner" id="banner">
 			<div class="layout">
@@ -178,7 +177,9 @@
 			<div class="new_list layout">
 				<div class="video">
 					<span class="title">视频直播<span class="title_s">LIVE CASINO</span></span>
-					<img src="../static/images/video.png" alt="">
+					<video id="my-player" class="video-js" controls preload="auto" poster="../static/images/video.png" data-setup='{}'>
+				    <source src='rtmp://183.2.236.48:1935/wjs/ML-10' type='rtmp/flv'/>  
+                    </video>
 					<p>
 						全球最顶级视讯平台，线上线下实时互动，美女荷官现场发牌，给你最真实游戏感受...
 					</p>
@@ -288,6 +289,40 @@
 			</div>
 
 		</footer>
+		<!-- 右侧导航 -->
+	<div class="nav_sidebar_right">
+		<ul>	
+			<!-- 签到成功添加CLASS ckeckinon -->
+			<li>
+				<a href="" class="nockeckin sidebar_right">	
+					<div class="login">
+						<span>157-5838-6266</span>
+						<span>133-6879-7773</span>
+					</div>
+				</a>
+			</li>
+			<li><a href="" class="xiaoman">
+				<img src="../static/images/WeChat.jpg" alt="">
+			</a></li>
+			<li>
+			<a href="" class="focusus sidebar_right">
+				<div class="login">
+						<span>mdwjs88888</span>
+					</div>
+			</a>
+			</li>
+			<li>
+			<a href="" class="contact sidebar_right">
+				<div class="login">
+						<span>987821888</span>
+						<span>987831888</span>
+					</div>
+			</a>
+			</li>
+			<li><a href="" class="backtop"></a></li>
+		</ul>
+	</div>
+	<!-- 右侧导航 end-->
 		<!-- banner-end -->
 		<script src="../static/js/jquery.min.js"></script>
 		<script src="../static/js/common.js"></script>
@@ -307,5 +342,19 @@
 			}
 		</script>
 		<!-- [endif] -->
+		<script type="text/javascript">
+			   var player = videojs('my-player');
+			   var options = {};
+
+			   var player = videojs('my-player', options, function onPlayerReady() {
+			     videojs.log('Your player is ready!');
+			     // In this context, `this` is the player that was created by Video.js.
+			     this.play();
+			     // How about an event listener?
+			     this.on('ended', function() {
+			       videojs.log('Awww...over so soon?!');
+			     });
+			   });
+        </script>
 	</body>
 	</html>
